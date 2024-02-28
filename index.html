@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  .header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    background-color: #042350;
+    color: lightgray;
+  }
+  
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left middle middle right right' 
+      'footer footer footer footer footer footer';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+  }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+  }
+  
+  /* Style the right column */
+  .right {
+    grid-area: right;
+  }
+  
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }</style>
+
+</head>
+<body>
+
+<h2>Walpole Highschool</h2>
+<p>WALPOLE HIGH SCHOOL // ACADEMICS // STEM ACADEMY</p>
+
+<div class="grid-container">
+  <div class="header">
+    <h2 style="color: #F65C02;">WHS STEM Academy</h2>
+  </div>
+  
+  <div class="left" style="background-color:#F65C02;"><img src="images/robot.png" width="300px"></div>
+  <div class="middle" style="background-color:#bbb;"><p>
+    <strong>ABOUT US</strong><br> 
+    The Walpole High School STEM Academy inspires young people to be future leaders by engaging them in real world, hands-on, mentor-based STEM activities and curriculum. We teach STEM as an integrated program and carefully connect the curriculum in each of the STEM fields throughout the duration of the Academy. Our programs build Science and Math skills inspire innovation and creative thinking, and foster well-rounded life capabilities including resiliency, teamwork, and communication skills essential in today's hi-tech society. The curriculum includes courses rich in the application of content, extensive problem-solving experiences, and integrated technologies. Advanced Placement and/or Honors courses in STEM are incorporated into the curriculum in order to challenge our students throughout their high school career and to prepare them for the rigors of STEM fields of study in college and beyond.
+  </p></div>  
+  <div class="right" style="background-color:#ccc;">
+    <p><strong>WHS STEM Academy Documents</strong></p>
+    <p>
+  <ul>
+    <li><a href="https://drive.google.com/file/d/12zWB2nt8og0t1cn83YNQv3GJTJsPCKLt/view">Program Overview</a></li>
+    <li><a href="https://drive.google.com/file/d/1secBwpVQyOBHpDY5F1pPT5JQyqodudll/view">Application Process (2023 Example)</a></li>
+    <li><a href="https://drive.google.com/file/d/1909a4dV_-U_86avzaKpXT0miYXAyt0VA/view">STEM Academy Suggested Schedule Example</a>  |  <a href="https://drive.google.com/file/d/1fGCCoQ8vpPaOb5VYox79PzPzY3tM5l1P/view">2023 Example of Application Questions</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc00q9u1aHgkx8Bxc4uTnh99jiC83y842SnlPqoOMm_M9rbpw/closedform">Class of 2028 STEM ACADEMY APPLICATION Coming Jan 2024</a></li>
+  </ul>
+    </p>
+
+    <p>
+    <strong>Class of 2024</strong><br>
+    
+    <li><a href="https://drive.google.com/file/d/1hOd4wTVfa9bHtqfww5NQziXL9z1owCZG/view">Class of 2024 Senior Capstone Project Requirements</a></li>
+    </p>
+    <p>
+    <strong>Class of 2025</strong><br>
+    
+    <li><a href="https://drive.google.com/file/d/1n113znlEqSCEz3XgWuT-KEr-4EeTLGm-/view"> Class of 2025 Junior Shadowing Projects Requirements</a></li><br>
+  </p>
+  </div>
+  
+  <div class="footer">
+  <p>
+  <img src="images/timberwolf_logo.png" width="100px">
+  <p>Find Us</p>
+  Walpole High School<br>
+  275 Common Street<br>
+  Walpole, MA 02081<br>
+  Phone: (508) 660-7257<br>
+  Fax: (508) 850-7958<br>
+  </p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
